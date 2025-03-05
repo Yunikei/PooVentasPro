@@ -49,7 +49,7 @@ namespace PooVentasPro
             totalContado = totalContado + totContado;
             txtTotContado.Text = totalContado.ToString();
             totalNeto = totalNeto + totalContado;
-            txtTotalNeto.Text = totalNeto.ToString();
+            txtTotalNeto.Text = totalNeto.ToString();//Actualiza Neto automaticamente
             DgvArticulos.Rows.Add(txtPre.Text, txtCan.Text, totContado.ToString());
         }
 
@@ -61,7 +61,7 @@ namespace PooVentasPro
             totalCredito = totalCredito + totCredito;
             txtTotCredito.Text = totalCredito.ToString();
             totalNeto = totalNeto + totalCredito;
-            txtTotalNeto.Text = totalNeto.ToString();
+            txtTotalNeto.Text = totalNeto.ToString();//Actualiza Neto automáticamente
             DgvArticulos.Rows.Add(txtPre.Text, txtCan.Text, 0, totCredito.ToString());
         }
     }
